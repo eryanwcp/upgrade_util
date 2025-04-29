@@ -120,7 +120,7 @@ class UpgradeUtilPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
         pkgs.add(
           mapOf(
             "packageName" to it,
-            "showName" to info.applicationInfo.loadLabel(pm()).toString(),
+            "showName" to (info.applicationInfo?.loadLabel(pm())?.toString() ?: "Unknown"),
             "icon" to drawableToBitmap(pm().getApplicationIcon(info.packageName))
           )
         )
