@@ -96,7 +96,7 @@ class UpgradeLocalizations extends UpgradeLocalizationsBase {
     'zh': <String, String>{
       'title': '发现新版本',
       'cancelText': '以后再说',
-      'updateText': '立即体验',
+      'updateText': '立即更新',
       'androidCancel': '取消',
       'androidTitle': '选择要使用的应用',
     },
